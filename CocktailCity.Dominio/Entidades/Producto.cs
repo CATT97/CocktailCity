@@ -7,5 +7,6 @@ namespace CocktailCity.Dominio
         public int Size {get;set;}
         public float Precio {get;set;}
         public string Descripcion {get;set;}
+        public string Cantidad {get;set;}
     }
 }
