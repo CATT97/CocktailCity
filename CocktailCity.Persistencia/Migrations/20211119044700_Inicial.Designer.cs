@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CocktailCity.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211119013717_Inicial")]
+    [Migration("20211119044700_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,7 +39,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Cantidad");
+                    b.ToTable("Cantidades");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Producto", b =>
@@ -66,7 +66,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Producto");
+                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Usuario", b =>
@@ -114,7 +114,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Usuario");
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Venta", b =>
@@ -138,7 +138,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Venta");
+                    b.ToTable("Ventas");
                 });
 #pragma warning restore 612, 618
         }

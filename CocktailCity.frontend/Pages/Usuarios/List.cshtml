@@ -1,0 +1,46 @@
+﻿@page
+@model CocktailCity.frontend.Pages.Usuarios.ListModel
+@{
+}
+
+<h1><center>Listado de Usuarios</center></h1>
+<hr />
+<table class="table table-hover" style="background-color: #D7DBDD" border="1">
+    <thead>
+        <tr style="background-color: #000000; color: #ffffff">
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Nickname</th>
+        <th scope="col">Tipo de documento</th>
+        <th scope="col"># de documento</th>
+        <th scope="col">Genero</th>
+        <th scope="col">Contraseña</th>
+        <th scope="col"># de contacto</th>
+        <th scope="col">Correo electronico</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Barrio</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Perfil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model.usuarios)
+        {
+            <tr>
+                <td>@usuario.ID</td>
+                <td>@usuario.Nombre</td>
+                <td>@usuario.Nickname</td>
+                <td>@usuario.TipoDocumento</td>
+                <td>@usuario.NumeroDocumento</td>
+                <td>@usuario.Genero</td>
+                <td>@usuario.Password</td>
+                <td>@usuario.NumeroContacto</td>
+                <td>@usuario.CorreoElectronico</td>
+                <td>@usuario.Direccion</td>
+                <td>@usuario.Barrio</td>
+                <td>@usuario.Ciudad</td>
+                <td>@usuario.Perfil</td>
+            </tr>
+        }
+    </tbody>
+</table>

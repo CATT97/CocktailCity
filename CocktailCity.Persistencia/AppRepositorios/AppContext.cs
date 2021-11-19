@@ -5,10 +5,10 @@ namespace CocktailCity.Persistencia
 {
     public class AppContext : DbContext
     {
-        public DbSet<Usuario> Usuario {get;set;}
-        public DbSet<Venta> Venta {get;set;}
-        public DbSet<Cantidad> Cantidad {get;set;}
-        public DbSet<Producto> Producto {get;set;}
+        public DbSet<Usuario> Usuarios {get;set;}
+        public DbSet<Venta> Ventas {get;set;}
+        public DbSet<Cantidad> Cantidades {get;set;}
+        public DbSet<Producto> Productos {get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){

@@ -8,7 +8,7 @@ namespace CocktailCity.Persistencia.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Cantidad",
+                name: "Cantidades",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -19,11 +19,11 @@ namespace CocktailCity.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cantidad", x => x.ID);
+                    table.PrimaryKey("PK_Cantidades", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Producto",
+                name: "Productos",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -36,11 +36,11 @@ namespace CocktailCity.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Producto", x => x.ID);
+                    table.PrimaryKey("PK_Productos", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Usuario",
+                name: "Usuarios",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -60,11 +60,11 @@ namespace CocktailCity.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Usuario", x => x.ID);
+                    table.PrimaryKey("PK_Usuarios", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Venta",
+                name: "Ventas",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -76,23 +76,23 @@ namespace CocktailCity.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Venta", x => x.ID);
+                    table.PrimaryKey("PK_Ventas", x => x.ID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Cantidad");
+                name: "Cantidades");
 
             migrationBuilder.DropTable(
-                name: "Producto");
+                name: "Productos");
 
             migrationBuilder.DropTable(
-                name: "Usuario");
+                name: "Usuarios");
 
             migrationBuilder.DropTable(
-                name: "Venta");
+                name: "Ventas");
         }
     }
 }

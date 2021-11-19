@@ -37,7 +37,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Cantidad");
+                    b.ToTable("Cantidades");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Producto", b =>
@@ -64,7 +64,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Producto");
+                    b.ToTable("Productos");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Usuario", b =>
@@ -112,7 +112,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Usuario");
+                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("CocktailCity.Dominio.Venta", b =>
@@ -136,7 +136,7 @@ namespace CocktailCity.Persistencia.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Venta");
+                    b.ToTable("Ventas");
                 });
 #pragma warning restore 612, 618
         }
