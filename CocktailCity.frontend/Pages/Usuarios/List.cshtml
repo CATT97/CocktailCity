@@ -10,37 +10,30 @@
         <tr style="background-color: #000000; color: #ffffff">
         <th scope="col">ID</th>
         <th scope="col">Nombre</th>
-        <th scope="col">Nickname</th>
         <th scope="col">Tipo de documento</th>
         <th scope="col"># de documento</th>
         <th scope="col">Genero</th>
-        <th scope="col">Contraseña</th>
         <th scope="col"># de contacto</th>
         <th scope="col">Correo electronico</th>
-        <th scope="col">Direccion</th>
-        <th scope="col">Barrio</th>
-        <th scope="col">Ciudad</th>
         <th scope="col">Perfil</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var usuario in Model.usuarios)
         {
-            <tr>
-                <td>@usuario.ID</td>
-                <td>@usuario.Nombre</td>
-                <td>@usuario.Nickname</td>
-                <td>@usuario.TipoDocumento</td>
-                <td>@usuario.NumeroDocumento</td>
-                <td>@usuario.Genero</td>
-                <td>@usuario.Password</td>
-                <td>@usuario.NumeroContacto</td>
-                <td>@usuario.CorreoElectronico</td>
-                <td>@usuario.Direccion</td>
-                <td>@usuario.Barrio</td>
-                <td>@usuario.Ciudad</td>
-                <td>@usuario.Perfil</td>
+            <tr> 
+                <td><center>@usuario.ID</center></td>
+                <td><center>@usuario.Nombre</center></td>
+                <td><center>@usuario.TipoDocumento</center></td>
+                <td><center>@usuario.NumeroDocumento</center></td>
+                <td><center>@usuario.Genero</center></td>
+                <td><center>@usuario.NumeroContacto</center></td>
+                <td><center>@usuario.CorreoElectronico</center></td>
+                <td><center>@usuario.Perfil</center></td>
             </tr>
         }
     </tbody>
 </table>
+<center>
+    <button type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/Create" class="button">Crear usuario</a></button>
+</center>

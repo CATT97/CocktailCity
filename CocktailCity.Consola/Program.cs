@@ -11,23 +11,23 @@ namespace CocktailCity.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Ejecutando");
-            //AddUsuario();
-            GetAllUsuarios();
+            AddUsuario();
+            //GetAllUsuarios();
         }
         private static void AddUsuario(){
             var usuario = new Usuario{
-                Nombre = "David Marin",
-                Nickname = "Marin123",
+                Nombre = "Juan Davis",
+                Nickname = "Juanda",
                 TipoDocumento = TipoDocumento.CC,
-                NumeroDocumento = "123456",
+                NumeroDocumento = "56789",
                 Genero = Genero.Masculino,
-                Password = "David987",
-                NumeroContacto = "3231231212",
-                CorreoElectronico = "david@gmail.com",
+                Password = "Aaaaaa",
+                NumeroContacto = "1234568",
+                CorreoElectronico = "juan@gmail.com",
                 Direccion = "Cll 2 # 3 - 4",
                 Barrio = "no se",
                 Ciudad = "Manizales",
-                Perfil = Perfil.Administrador
+                Perfil = Perfil.Empleado
             };
             _repoUsuario.AddUsuario(usuario);
         }

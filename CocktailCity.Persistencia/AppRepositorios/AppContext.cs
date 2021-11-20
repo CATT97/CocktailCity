@@ -12,8 +12,8 @@ namespace CocktailCity.Persistencia
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if(!optionsBuilder.IsConfigured){
-                optionsBuilder.UseSqlServer("Initial Catalog=CocktailCity; Data Source= DESKTOP-8JS3SSV\\SQLEXPRESS; Integrated Security=true");
             }
+                optionsBuilder.UseSqlServer("Initial Catalog=CocktailCity; Data Source= LAPTOP-SJKTF8AP\\SQLEXPRESS; Integrated Security=true");
         }
     }
 }
