@@ -26,6 +26,7 @@ namespace CocktailCity.frontend
         {
             services.AddRazorPages();
             services.AddSingleton<IRepositorioUsuario, RepositorioUsuario>();
+            services.AddSingleton<IRepositorioProducto, RepositorioProducto>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

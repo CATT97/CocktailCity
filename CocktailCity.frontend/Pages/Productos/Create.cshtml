@@ -1,0 +1,36 @@
+﻿@page
+@using CocktailCity.Dominio
+@model MiprimeraApp.frontend.Pages.Productos.CreateModel
+@{
+}
+<center>
+<h1>Crear Producto</h1>
+</center>
+<hr/>
+<center>
+    <form method="post">
+        <div class="jumbotron" style="width:600px">
+            <div class="form-group">
+                <label asp-for="producto.Nombre"></label>
+                <input asp-for="producto.Nombre" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="producto.Size">Tamaño</label>
+                <input asp-for="producto.Size" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="producto.Cantidad"></label>
+                <input asp-for="producto.Cantidad" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="producto.Precio"></label>
+                <input asp-for="producto.Precio" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="producto.Descripcion">Descripción</label>
+                <input asp-for="producto.Descripcion" class="form-control">
+            </div>
+        </div>
+        <center><input type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD" /> | <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Productos/List" class="button">Regresar</a></button></center>
+    </form>
+</center>

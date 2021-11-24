@@ -1,0 +1,37 @@
+﻿@page
+@model MiprimeraApp.frontend.Pages.Productos.ListModel
+@{
+}
+
+<h1><center>Listado de Productos</center></h1>
+<hr />
+<table class="table table-hover" style="background-color: #D7DBDD" border="1">
+    <thead>
+        <tr style="background-color: #000000; color: #ffffff">
+            <th scope="col"><center>ID</center></th>
+            <th scope="col"><center>Nombre</center></th>
+            <th scope="col"><center>Tamaño</center></th>
+            <th scope="col"><center>Cantidad</center></th>
+            <th scope="col"><center>Precio</center></th>
+            <th scope="col"><center>Descripción</center></th>
+            <th scope="col"><center>Opciones</center></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model.productos)
+        {
+            <tr> 
+                <td><center>@producto.ID</center></td>
+                <td><center>@producto.Nombre</center></td>
+                <td><center>@producto.Size</center></td>
+                <td><center>@producto.Cantidad</center></td>
+                <td><center>@producto.Precio</center></td>
+                <td><center>@producto.Descripcion</center></td>
+                <td><center></center></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<center>
+    <button type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Productos/Create" class="button">Crear producto</a></button>
+</center>
