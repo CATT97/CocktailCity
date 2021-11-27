@@ -16,5 +16,9 @@ namespace CocktailCity.Persistencia
         IEnumerable<Usuario> IRepositorioUsuario.GetAllUsuarios(){
             return _appContext.Usuarios;
         }
+        Usuario IRepositorioUsuario.GetUsuario(int idUsuario)
+        {
+            return _appContext.Usuarios.Find(idUsuario);
+        }
     }
 }

@@ -1,0 +1,67 @@
+﻿@page
+@using CocktailCity.Dominio
+@model CocktailCity.frontend.Pages.Usuarios.DetailsModel
+@{
+}
+
+<h1><center>Detalle del usuario</center></h1>
+<hr />
+<center>
+    <div class="jumbotron" style="width:600px">
+        <table class="table table-striped">
+            <tr>
+                <th scope="col">ID</th>
+                <td>@Model.usuario.ID</td>
+            </tr>
+            <tr>
+                <th scope="col">Nombre</th>
+                <td>@Model.usuario.Nombre</td>
+            </tr>
+            <tr>
+                <th scope="col">Nickname</th>
+                <td>@Model.usuario.Nickname</td>
+            </tr>
+            <tr>
+                <th scope="col">Tipo de Documento</th>
+                <td>@Model.usuario.TipoDocumento</td>
+            </tr>
+            <tr>
+                <th scope="col">Numero de Documento</th>
+                <td>@Model.usuario.NumeroDocumento</td>
+            </tr>
+            <tr>
+                <th scope="col">Género</th>
+                <td>@Model.usuario.Genero</td>
+            </tr>
+            <tr>
+                <th scope="col">Contraseña</th>
+                <td>@Model.usuario.Password</td>
+            </tr>
+            <tr>
+                <th scope="col">Numero de contacto</th>
+                <td>@Model.usuario.NumeroContacto</td>
+            </tr>
+            <tr>
+                <th scope="col">Correo electronico</th>
+                <td>@Model.usuario.CorreoElectronico</td>
+            </tr>
+            <tr>
+                <th scope="col">Dirección</th>
+                <td>@Model.usuario.Direccion</td>
+            </tr>
+            <tr>
+                <th scope="col">Barrio</th>
+                <td>@Model.usuario.Barrio</td>
+            </tr>
+            <tr>
+                <th scope="col">Ciudad</th>
+                <td>@Model.usuario.Ciudad</td>
+            </tr>
+            <tr>
+                <th scope="col">Perfil</th>
+                <td>@Model.usuario.Perfil</td>
+            </tr>
+        </table>
+    </div>
+</center>
+<center><button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>

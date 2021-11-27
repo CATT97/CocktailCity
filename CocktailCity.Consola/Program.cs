@@ -15,10 +15,13 @@ namespace CocktailCity.Consola
             //USUARIO
             //AddUsuario();
             //GetAllUsuarios();
+            //GetUsuario();
             //PRODUCTO
             //AddProducto();
             //cdGetAllProductos();
+            //GetProducto();
         }
+        //Usuario
         private static void AddUsuario(){
             var usuario = new Usuario{
                 Nombre = "Juan David",
@@ -42,6 +45,12 @@ namespace CocktailCity.Consola
                 Console.WriteLine(usuario.Nombre+" "+usuario.Nickname+" "+usuario.TipoDocumento);
             }
         }
+        private static void GetUsuario(int idUsuario)
+        {
+            var usuario = _repoUsuario.GetUsuario(idUsuario);
+            Console.WriteLine(usuario.Nombre+" "+usuario.NumeroDocumento);
+        }
+        //Producto
         private static void AddProducto(){
             var producto = new Producto{
                 Nombre = "GreenApple",
@@ -58,6 +67,11 @@ namespace CocktailCity.Consola
             foreach(var producto in productos){
                 Console.WriteLine(producto.Nombre+" "+producto.Size+" "+producto.Cantidad+" "+producto.Precio+" "+producto.Descripcion);
             }
+        }
+        private static void GetProducto(int idProducto)
+        {
+            var producto = _repoProducto.GetProducto(idProducto);
+            Console.WriteLine(producto.Nombre+" "+producto.Precio);
         }
     }
 }

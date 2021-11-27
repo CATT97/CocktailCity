@@ -16,5 +16,9 @@ namespace CocktailCity.Persistencia
         IEnumerable<Producto> IRepositorioProducto.GetAllProductos(){
             return _appContext.Productos;
         }
+        Producto IRepositorioProducto.GetProducto(int idProducto)
+        {
+            return _appContext.Productos.Find(idProducto);
+        }
     }
 }

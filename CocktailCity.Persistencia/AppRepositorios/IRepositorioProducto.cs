@@ -8,6 +8,6 @@ namespace CocktailCity.Persistencia
          Producto AddProducto(Producto producto);
          //Producto UpdateProducto(Producto producto);
          //void DeleteProducto(int idProducto);
-         //Producto GetProducto(int idProducto);
+         Producto GetProducto(int idProducto);
     }
 }

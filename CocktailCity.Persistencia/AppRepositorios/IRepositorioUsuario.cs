@@ -8,6 +8,6 @@ namespace CocktailCity.Persistencia
          Usuario AddUsuario(Usuario usuario);
          //Usuario UpdateUsuario(Usuario usuario);
          //void DeleteUsuario(int idUsuario);
-         //Usuario GetUsuario(int idUsuario);
+         Usuario GetUsuario(int idUsuario);
     }
 }
