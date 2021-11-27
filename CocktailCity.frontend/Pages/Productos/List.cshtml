@@ -27,7 +27,7 @@
                 <td><center>@producto.Cantidad</center></td>
                 <td><center>@producto.Precio</center></td>
                 <td><center>@producto.Descripcion</center></td>
-                <td><center></center></td>
+                <td><center><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@producto.ID">Detalle</a></center></td>
             </tr>
         }
     </tbody>

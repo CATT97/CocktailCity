@@ -1,0 +1,39 @@
+﻿@page
+@using CocktailCity.Dominio
+@model CocktailCity.frontend.Pages.Productos.DetailsModel
+@{
+}
+
+<h1><center>Detalle del Producto</center></h1>
+<hr />
+<center>
+    <div class="jumbotron" style="width:600px">
+        <table class="table table-striped">
+            <tr>
+                <th scope="col">ID</th>
+                <td>@Model.producto.ID</td>
+            </tr>
+            <tr>
+                <th scope="col">Nombre</th>
+                <td>@Model.producto.Nombre</td>
+            </tr>
+            <tr>
+                <th scope="col">Tamaño</th>
+                <td>@Model.producto.Size</td>
+            </tr>
+            <tr>
+                <th scope="col">Precio</th>
+                <td>@Model.producto.Precio</td>
+            </tr>
+            <tr>
+                <th scope="col">Descripción</th>
+                <td>@Model.producto.Descripcion</td>
+            </tr>
+            <tr>
+                <th scope="col">Cantidad</th>
+                <td>@Model.producto.Cantidad</td>
+            </tr>
+        </table>
+    </div>
+</center>
+<center><button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Productos/List" class="button">Regresar</a></button></center>
