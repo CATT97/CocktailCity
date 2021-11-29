@@ -1,0 +1,49 @@
+﻿@page
+@model CocktailCity.frontend.Pages.Usuarios.DeleteModel
+@using CocktailCity.Dominio
+@{
+}
+
+<center>
+<h1>Eliminar Usuario</h1>
+</center>
+<hr/>
+<center>
+    <form method="post">
+        <div class="jumbotron" style="width:600px">
+            <div class="form-group">
+                <label asp-for="usuario.ID"></label>
+                <input asp-for="usuario.ID" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Nombre"></label>
+                <input asp-for="usuario.Nombre" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.TipoDocumento">Tipo de Documento</label>
+                <input asp-for="usuario.TipoDocumento" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.NumeroDocumento">Numero de Documento</label>
+                <input asp-for="usuario.NumeroDocumento" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Genero">Género</label>
+                <select asp-for="usuario.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control" readonly></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.NumeroContacto">Numero de Contacto</label>
+                <input asp-for="usuario.NumeroContacto" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.CorreoElectronico">Correo Electronico</label>
+                <input asp-for="usuario.CorreoElectronico" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Perfil"></label>
+                <select asp-for="usuario.Perfil" asp-items="Html.GetEnumSelectList<Perfil>()" class="form-control" readonly></select>
+            </div>
+        </div>
+        <center><input type="submit" value="Eliminar" class="btn btn-default" style="background-color: #D7DBDD"/> | <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>
+    </form>
+</center>

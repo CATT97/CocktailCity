@@ -1,0 +1,69 @@
+﻿@page
+@model CocktailCity.frontend.Pages.Usuarios.UpdateModel
+@using CocktailCity.Dominio
+@{
+}
+<center>
+<h1>Editar Usuario</h1>
+</center>
+<hr/>
+<center>
+    <form method="post">
+        <div class="jumbotron" style="width:600px">
+            <div class="form-group">
+                <label asp-for="usuario.ID"></label>
+                <input asp-for="usuario.ID" class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Nombre"></label>
+                <input asp-for="usuario.Nombre" class="form-control">
+                <span asp-validation-for="usuario.Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Nickname"></label>
+                <input asp-for="usuario.Nickname" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.TipoDocumento">Tipo de Documento</label>
+                <select asp-for="usuario.TipoDocumento" asp-items="Html.GetEnumSelectList<TipoDocumento>()" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.NumeroDocumento">Numero de Documento</label>
+                <input asp-for="usuario.NumeroDocumento" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Genero">Género</label>
+                <select asp-for="usuario.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Password">Contraseña</label>
+                <input asp-for="usuario.Password" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.NumeroContacto">Numero de Contacto</label>
+                <input asp-for="usuario.NumeroContacto" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.CorreoElectronico">Correo Electronico</label>
+                <input asp-for="usuario.CorreoElectronico" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Direccion">Dirección</label>
+                <input asp-for="usuario.Direccion" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Barrio"></label>
+                <input asp-for="usuario.Barrio" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Ciudad"></label>
+                <input asp-for="usuario.Ciudad" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="usuario.Perfil"></label>
+                <select asp-for="usuario.Perfil" asp-items="Html.GetEnumSelectList<Perfil>()" class="form-control"></select>
+            </div>
+        </div>
+        <center><input type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"/> | <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>
+    </form>
+</center>
