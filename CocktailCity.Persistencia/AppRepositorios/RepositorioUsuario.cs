@@ -45,6 +45,6 @@ namespace CocktailCity.Persistencia
             return;
             _appContext.Usuarios.Remove(usuarioEncontrado);
             _appContext.SaveChanges();
-            }
+        }
     }
 }

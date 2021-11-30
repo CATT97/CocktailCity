@@ -6,8 +6,8 @@ namespace CocktailCity.Persistencia
     {
          IEnumerable<Producto> GetAllProductos();
          Producto AddProducto(Producto producto);
-         //Producto UpdateProducto(Producto producto);
-         //void DeleteProducto(int idProducto);
+         Producto UpdateProducto(Producto producto);
+         void DeleteProducto(int idProducto);
          Producto GetProducto(int idProducto);
     }
 }
