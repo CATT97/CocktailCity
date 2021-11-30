@@ -11,8 +11,8 @@
             <th scope="col"><center>ID</center></th>
             <th scope="col"><center>Nombre</center></th>
             <th scope="col"><center>Tamaño</center></th>
-            <th scope="col"><center>Cantidad</center></th>
             <th scope="col"><center>Precio</center></th>
+            <th scope="col"><center>Cantidad</center></th>
             <th scope="col"><center>Descripción</center></th>
             <th scope="col"><center>Opciones</center></th>
         </tr>
@@ -24,10 +24,10 @@
                 <td><center>@producto.ID</center></td>
                 <td><center>@producto.Nombre</center></td>
                 <td><center>@producto.Size</center></td>
-                <td><center>@producto.Cantidad</center></td>
                 <td><center>@producto.Precio</center></td>
+                <td><center>@producto.Cantidad</center></td>
                 <td><center>@producto.Descripcion</center></td>
-                <td><center><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@producto.ID">Detalle</a></center></td>
+                <td style="width: 235px;"><p><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@producto.ID" style="padding: 5px;">Detalle</a> | <a class="btn btn-secondary" asp-page="./Update" asp-route-id="@producto.ID" style="padding: 5px;">Editar</a> | <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@producto.ID" style="padding: 5px;">Eliminar</a></p></td>
             </tr>
         }
     </tbody>
