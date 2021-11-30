@@ -11,38 +11,36 @@
 <center>
     <form method="post">
         <div class="jumbotron" style="width:600px">
-            <div class="form-group">
-                <label asp-for="usuario.ID"></label>
-                <input asp-for="usuario.ID" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.Nombre"></label>
-                <input asp-for="usuario.Nombre" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.TipoDocumento">Tipo de Documento</label>
-                <input asp-for="usuario.TipoDocumento" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.NumeroDocumento">Numero de Documento</label>
-                <input asp-for="usuario.NumeroDocumento" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.Genero">Género</label>
-                <select asp-for="usuario.Genero" asp-items="Html.GetEnumSelectList<Genero>()" class="form-control" readonly></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.NumeroContacto">Numero de Contacto</label>
-                <input asp-for="usuario.NumeroContacto" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.CorreoElectronico">Correo Electronico</label>
-                <input asp-for="usuario.CorreoElectronico" class="form-control" readonly>
-            </div>
-            <div class="form-group">
-                <label asp-for="usuario.Perfil"></label>
-                <select asp-for="usuario.Perfil" asp-items="Html.GetEnumSelectList<Perfil>()" class="form-control" readonly></select>
-            </div>
+            <table class="table table-striped">
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <td>@Model.usuario.Nombre</td>
+                </tr>
+                <tr>
+                    <th scope="col">Tipo de Documento</th>
+                    <td>@Model.usuario.TipoDocumento</td>
+                </tr>
+                <tr>
+                    <th scope="col">Numero de Documento</th>
+                    <td>@Model.usuario.NumeroDocumento</td>
+                </tr>
+                <tr>
+                    <th scope="col">Género</th>
+                    <td>@Model.usuario.Genero</td>
+                </tr>
+                <tr>
+                    <th scope="col">Numero de contacto</th>
+                    <td>@Model.usuario.NumeroContacto</td>
+                </tr>
+                <tr>
+                    <th scope="col">Correo electronico</th>
+                    <td>@Model.usuario.CorreoElectronico</td>
+                </tr>
+                <tr>
+                    <th scope="col">Perfil</th>
+                    <td>@Model.usuario.Perfil</td>
+                </tr>
+            </table>
         </div>
         <center><input type="submit" value="Eliminar" class="btn btn-default" style="background-color: #D7DBDD"/> | <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>
     </form>

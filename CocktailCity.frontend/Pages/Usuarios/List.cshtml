@@ -33,8 +33,7 @@
                 <td><center>@usuario.NumeroContacto</center></td>
                 <td><center>@usuario.CorreoElectronico</center></td>
                 <td><center>@usuario.Perfil</center></td>
-                <td><center><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@usuario.ID">Detalle</a><p>  </p><a class="btn btn-secondary" asp-page="./Update" asp-route-id="@usuario.ID">Editar</a><p>  </p><a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@usuario.ID">Eliminar</a>
-                </center></td>
+                <td style="width: 235px;"><p><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@usuario.ID" style="padding: 5px;">Detalle</a> | <a class="btn btn-secondary" asp-page="./Update" asp-route-id="@usuario.ID" style="padding: 5px;">Editar</a> | <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@usuario.ID" style="padding: 5px;">Eliminar</a></p></td>
             </tr>
         }
     </tbody>

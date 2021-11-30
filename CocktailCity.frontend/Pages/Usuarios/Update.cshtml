@@ -11,7 +11,7 @@
     <form method="post">
         <div class="jumbotron" style="width:600px">
             <div class="form-group">
-                <label asp-for="usuario.ID"></label>
+                <label asp-for="usuario.ID">ID</label>
                 <input asp-for="usuario.ID" class="form-control" readonly>
             </div>
             <div class="form-group">
@@ -64,6 +64,6 @@
                 <select asp-for="usuario.Perfil" asp-items="Html.GetEnumSelectList<Perfil>()" class="form-control"></select>
             </div>
         </div>
-        <center><input type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"/> | <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>
+        <center><input type="submit" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"/>  |  <button type="button" value="Guardar" class="btn btn-default" style="background-color: #D7DBDD"><a href="https://localhost:5001/Usuarios/List" class="button">Regresar</a></button></center>
     </form>
 </center>
